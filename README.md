@@ -17,7 +17,7 @@
 ---
 
 ## Структура проекта
-
+```
 my-own-express/
 ├── cpp-http-server/        # Низкоуровневый HTTP сервер на C++
 │   ├── src/                # Исходные коды
@@ -34,7 +34,7 @@ my-own-express/
 │   └── package.json        # Зависимости Node.js приложения
 ├── README.md
 └── LICENSE
-
+```
 
 ---
 
