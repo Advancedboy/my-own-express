@@ -19,21 +19,22 @@
 ## Структура проекта
 
 my-own-express/
-├── cpp-http-server/ # Низкоуровневый HTTP сервер на C++
-│ ├── src/
-│ ├── include/
-│ └── CMakeLists.txt # Сборка C++ библиотеки
-├── node-addon/ # Node.js native addon обертка для C++ сервера
-│ ├── binding.cc
-│ ├── binding.gyp
-│ └── package.json
-├── app/ # Высокоуровневый слой Node.js с API похожим на Express
-│ ├── app.js
-│ ├── router.js
-│ ├── middleware.js
-│ └── package.json
+├── cpp-http-server/        # Низкоуровневый HTTP сервер на C++
+│   ├── src/                # Исходные коды
+│   ├── include/            # Заголовочные файлы
+│   └── CMakeLists.txt      # Сборщик C++
+├── node-addon/             # Node.js native addon для обертки C++ сервера
+│   ├── binding.cc          # Исходники Node-API
+│   ├── binding.gyp         # Конфиг сборки node-gyp
+│   └── package.json        # Зависимости Node.js addon
+├── app/                    # Высокоуровневый Node.js слой, пользовательский API
+│   ├── app.js              # Точка входа приложения
+│   ├── router.js           # Логика маршрутов
+│   ├── middleware.js       # Middleware
+│   └── package.json        # Зависимости Node.js приложения
 ├── README.md
 └── LICENSE
+
 
 ---
 
